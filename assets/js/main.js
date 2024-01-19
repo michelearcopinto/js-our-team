@@ -34,7 +34,9 @@ function createObjectsArray() {
         employeeString.innerHTML = `<strong>mansione:</strong> ${objectsArray[i].mansione}, <strong>img path:</strong> ${objectsArray[i].foto}`
 
 
-        employeeCardBox.classList.add('col-4', 'pt-3')
+        employeeCardBox.classList.add('rounded-4', 'm-2', 'p-0', 'bg-white', 'overflow-hidden', 'shadow-lg')
+        employeeCardBox.style.width = 'calc((100% / 3) - 16px)'
+        employeeCardBox.style.userSelect = 'none'
         employeeImage.classList.add('img-fluid')
         employeeList.classList.add('mt-2')
         employeeImage.src = `./assets/img/${imgs[i]}`;
