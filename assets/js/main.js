@@ -45,17 +45,17 @@ function createObjectsArray() {
 
         for (let i = 0; i < 2; i++) {
 
+            let employeeInfo = document.createElement('li');
+
             if (i === 0) {
 
-                arrayPick = names;
+                employeeInfo.textContent = objectsArray[incrementale].nome;
 
             } else if (i === 1) {
 
-                arrayPick = jobs;
+                employeeInfo.textContent = objectsArray[incrementale].mansione;
             }
 
-            let employeeInfo = document.createElement('li');
-            employeeInfo.textContent = arrayPick[incrementale];
             employeeList.append(employeeInfo);
         }
 
